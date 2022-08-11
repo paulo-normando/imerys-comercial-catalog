@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="imerysBlue_200">#525cd2</color>
+    <color name="imerysBlue_500">#0033a0</color>
+    <color name="imerysBlue_700">#001070</color>
+    <color name="imerysGray_200">#aeaeae</color>
+    <color name="imerysGray_700">#535353</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
