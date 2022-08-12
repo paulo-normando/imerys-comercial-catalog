@@ -1,4 +1,4 @@
-package br.com.imerys.imeryscomercialcatalog.ui.home
+package br.com.imerys.imeryscomercialcatalog.ui.solutions
 
 import android.os.Bundle
 import android.view.LayoutInflater

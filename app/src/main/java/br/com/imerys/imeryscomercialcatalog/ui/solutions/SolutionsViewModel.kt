@@ -1,4 +1,4 @@
-package br.com.imerys.imeryscomercialcatalog.ui.home
+package br.com.imerys.imeryscomercialcatalog.ui.solutions
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
