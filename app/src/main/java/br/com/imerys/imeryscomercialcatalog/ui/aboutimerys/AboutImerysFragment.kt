@@ -1,4 +1,4 @@
-package br.com.imerys.imeryscomercialcatalog.ui.slideshow
+package br.com.imerys.imeryscomercialcatalog.ui.aboutimerys
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import br.com.imerys.imeryscomercialcatalog.databinding.FragmentSlideshowBinding
+import br.com.imerys.imeryscomercialcatalog.databinding.FragmentAboutimerysBinding
 
-class SlideshowFragment : Fragment() {
+class AboutImerysFragment : Fragment() {
 
-    private var _binding: FragmentSlideshowBinding? = null
+    private var _binding: FragmentAboutimerysBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class SlideshowFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+        val aboutImerysViewModel =
+            ViewModelProvider(this).get(AboutImerysViewModel::class.java)
 
-        _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        _binding = FragmentAboutimerysBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textSlideshow
-        slideshowViewModel.text.observe(viewLifecycleOwner) {
+        aboutImerysViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
