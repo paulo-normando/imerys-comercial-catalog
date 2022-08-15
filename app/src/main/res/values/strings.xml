@@ -10,4 +10,6 @@
     <string name="menu_home">Solutions</string>
     <string name="menu_gallery">Success Cases</string>
     <string name="menu_slideshow">About Imerys</string>
+    <string name="applications">Applications</string>
+    <string name="product_image">Product Image</string>
 </resources>
