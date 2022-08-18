@@ -42,6 +42,9 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        setupProductList()
+        setupFloatingActionButton()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -53,5 +56,13 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    private fun setupProductList() {
+        //TODO Listar produtos, consumindo a API
+    }
+
+    private fun setupFloatingActionButton() {
+        //TODO Criar evento de click
     }
 }
