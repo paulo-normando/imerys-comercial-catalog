@@ -12,6 +12,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import br.com.imerys.imeryscomercialcatalog.databinding.ActivityMainBinding
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,8 +45,18 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+        setupHTTPClient()
         setupProductList()
         setupFloatingActionButton()
+    }
+
+    private fun setupHTTPClient() {
+        Retrofit retrofit = new Retrofit.Builder()
+            .baseUrl("https://raw.githubusercontent.com/paulo-normando/imerys-products-api/main/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        retrofit.create(ProductsApi.class)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
