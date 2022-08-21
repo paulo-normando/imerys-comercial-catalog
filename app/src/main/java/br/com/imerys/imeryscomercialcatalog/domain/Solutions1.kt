@@ -1,6 +1,6 @@
 package br.com.imerys.imeryscomercialcatalog.domain
 
-data class Solutions (
+data class Solutions1 (
     val id : Int,
     val markets : String,
     val category : String,
